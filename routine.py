@@ -1,4 +1,4 @@
-# This module defines the different routines that can show up in a training plan
+# This module defines the different routines that can show up in a cusrom training plan
 def tempo(distance):
     return 'Tempo run for: {} kilometers'.format(distance)
 

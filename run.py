@@ -1,13 +1,16 @@
+# import the required modules
 import goal
 import pprint
 from routine import *
 
-new_goal = goal.Goal()
+#new_goal = goal.Goal()
 
+# Get the distance and difficulty recorded by the user
 selected_distance = new_goal.distance
 selected_difficulty = new_goal.difficulty
 
 
+# Based on the selected distance and difficulty choose the right plan
 def final_plan():
     # Alternatives for a distance of 10K
     if selected_distance == '10' and selected_difficulty == 'Beginner':
@@ -101,13 +104,7 @@ def final_plan():
 
 plan = final_plan()
 
-#pp = pprint.PrettyPrinter(depth=6)
-#pp.pprint('Your first week looks like this'+plan.append([week_1]))
-# Try to print nicely
-
-#for plan in plan:
-#    print 'This is your plan:', plan
-
+# Use Data pretty printer to nicely print the contents of each week of the plan
 for index in range(len(plan)):
     print "Week " + str(index + 1) + ":", plan[index]
     pp = pprint.PrettyPrinter(indent=1, width=80, depth=None)

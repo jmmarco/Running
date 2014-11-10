@@ -1,7 +1,7 @@
 class Goal():
     """This class creates and initialize the distance and difficulty variables"""
  
-
+# Define and create the global variables and welcome the user
     VALID_DISTANCES = ['10','21','42']
     VALID_DIFFICULTY = ['Beginner','Intermediate','Advanced']
     print 'Welcome to the training plan generator!'
