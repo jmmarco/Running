@@ -3,7 +3,7 @@ import goal
 import pprint
 from routine import *
 
-#new_goal = goal.Goal()
+new_goal = goal.Goal()
 
 # Get the distance and difficulty recorded by the user
 selected_distance = new_goal.distance
@@ -127,6 +127,7 @@ print "\n"*5
 #print 'Remeber, all workouts should include a 15 to 20 minute warmup jog.'
 #print 'At the end of each workout do not forget to stretch for at least 10 minutes'
 print 'good bye!'
+print (goal.Goal.__doc__)
 
 
 
