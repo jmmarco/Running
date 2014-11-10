@@ -1,27 +1,33 @@
 # This module defines the different routines that can show up in a training plan
 def tempo(distance):
-    return ('Start with a warm up run for 15 to 20 minutes and then run:'+str(distance),'kilometers')
-    
-def interval(distance):
-    return ('Start with a warm up run for 15 to 20 minutes and then run:'+str(distance),'kilometers')
+    return 'Tempo run for: {} kilometers'.format(distance)
 
-def fartlek(distance):
-    return ('Start with a warm up run for 15 to 20 minutes and then run:'+str(distance),'kilometers')
+def interval(distance):
+    return 'Distance run for: {} kilometers'.format(distance)
 
 def stretch(minutes):
-    return ('Just stretch for'+str(minutes),'minutes')
+    return 'Stretch for: {} minutes'.format(minutes)
 
 def progression(distance):
-    return ('Start with a warm up run for 15 to 20 minutes and then run:'+str(distance),'kilometers')
+    return 'Progression run for: {} kilometers'.format(distance)
 
 def rest():
-    return ('It\'s your day off! Enjoy and get some rest')
+    return ('Day off')
 
 def resistance(minutes):
-    return ('Start with a warm up run for 15 to 20 minutes and then run:'+str(minutes),'minutes')
+    return 'Run easy for: {} minutes'.format(minutes)
 
-def sprints(distance):
-    return ('Start with a warm up run for 15 to 20 minutes followed by' distance/8'x'distance/6' meters sprints')
+def sprints(amount):
+    return 'Do {} x 80 sprints'.format(amount)
 
-def cross_train(minutes)
-    return ('Go for a bike ride or a swim for at least:'+str(minutes)'minutes')
+def race(distance):
+    return 'Race day run for: {} kilometers!'.format(distance)
+
+def light_run(distance):
+    return 'Jog at an easy pace for: {} kilometers'.format(distance)
+
+def run(distance):
+    return 'Run for: {} kilometers'.format(distance)
+
+def cross_train(minutes):
+    return 'Run for: {} minutes'.format(minutes)
