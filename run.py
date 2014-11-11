@@ -59,7 +59,7 @@ def final_plan():
         week_13 = [rest(),sprints(5),interval(6),resistance(45),fartlek(8),rest(),race(10)]
         week_14 = [rest(),speed(5),sprints(5),resistance(45),fartlek(8),rest(),race(10)]
         week_15 = [rest(),rest(),rest(),interval(2),stretch(30),rest(),race(21)]
-        plan = [week_1,week_2,week_3,week_4,week_5,week_6,week_7,week_8,week_9,week_10,week_10,week_11,week_12,week_13,week_14,week_15]
+        plan = [week_1,week_2,week_3,week_4,week_5,week_6,week_7,week_8,week_9,week_10,week_11,week_12,week_13,week_14,week_15]
         
     elif selected_distance == '21' and selected_difficulty == 'Intermediate':
         week_1 = [rest(),resistance(45),speed(4),rest(),interval(6),rest(),tempo(10)]
@@ -77,7 +77,7 @@ def final_plan():
         week_13 = [rest(),sprints(5),interval(6),resistance(45),fartlek(8),rest(),race(10)]
         week_14 = [rest(),speed(5),sprints(5),resistance(45),farlek(8),rest(),race(10)]
         week_15 = [rest(),rest(),rest(),interval(2),stretch(30),rest(),race(21)]
-        plan = [week_1,week_2,week_3,week_4,week_5,week_6,week_7,week_8,week_9,week_10,week_10,week_11,week_12,week_13,week_14,week_15]
+        plan = [week_1,week_2,week_3,week_4,week_5,week_6,week_7,week_8,week_9,week_10,week_11,week_12,week_13,week_14,week_15]
 
     elif selected_distance == '21' and selected_difficulty == 'Advanced':
         week_1 = [light_run(5),resistance(45),speed(6),rest(),sprints(6),rest(),tempo(18)]
@@ -95,7 +95,7 @@ def final_plan():
         week_13 = [rest(),sprints(5),interval(6),resistance(45),fartlek(8),rest(),race(10)]
         week_14 = [rest(),speed(5),sprints(5),resistance(45),farlek(8),rest(),race(10)]
         week_15 = [rest(),rest(),rest(),interval(2),stretch(30),rest(),race(21)]
-        plan = [week_1,week_2,week_3,week_4,week_5,week_6,week_7,week_8,week_9,week_10,week_10,week_11,week_12,week_13,week_14,week_15]
+        plan = [week_1,week_2,week_3,week_4,week_5,week_6,week_7,week_8,week_9,week_10,week_11,week_12,week_13,week_14,week_15]
 
     # Alternatives for a distance of 42K
 
@@ -115,7 +115,7 @@ def final_plan():
         week_13 = [rest(),light_run(5),progression(6),rest(),run(2),rest(),tempo(30)]
         week_14 = [rest(),speed(5),hills(4.5),resistance(45),light_run(3),rest(),tempo(10)]
         week_15 = [run(5),stretch(15),rest(),stretch(30),rest(),light_run(5),race(42.2)]
-        plan = [week_1,week_2,week_3,week_4,week_5,week_6,week_7,week_8,week_9,week_10,week_10,week_11,week_12,week_13,week_14,week_15]
+        plan = [week_1,week_2,week_3,week_4,week_5,week_6,week_7,week_8,week_9,week_10,week_11,week_12,week_13,week_14,week_15]
         return plan
 
     elif selected_distance == '42' and selected_difficulty == 'Intermediate':
@@ -134,7 +134,7 @@ def final_plan():
         week_13 = [rest(),interval(8),light_run(3),speed(10),progression(8),rest(),race(30)]
         week_14 = [rest(),speed(5),rest(),resistance(45),interval(8),rest(),tempo(10)]
         week_15 = [tempo(5),stretch(15),rest(),rest(),stretch(30),light_run(5),race(42.2)]
-        plan = [week_1,week_2,week_3,week_4,week_5,week_6,week_7,week_8,week_9,week_10,week_10,week_11,week_12,week_13,week_14,week_15]
+        plan = [week_1,week_2,week_3,week_4,week_5,week_6,week_7,week_8,week_9,week_10,week_11,week_12,week_13,week_14,week_15]
 
     elif selected_distance == '42' and selected_difficulty == 'Advanced':
         week_1 = [light_run(5),resistance(45),speed(6),rest(),sprints(6),rest(),tempo(18)]
@@ -152,7 +152,7 @@ def final_plan():
         week_13 = [rest(),tempo(7),rest(),tempo(4),stretch(10),rest(),tempo(10)]
         week_14 = [rest(),tempo(7),rest(),tempo(4),stretch(10),rest(),tempo(10)]
         week_15 = [rest(),tempo(7),rest(),tempo(4),stretch(10),rest(),tempo(10)]
-        plan = [week_1,week_2,week_3,week_4,week_5,week_6,week_7,week_8,week_9,week_10,week_10,week_11,week_12,week_13,week_14,week_15] 
+        plan = [week_1,week_2,week_3,week_4,week_5,week_6,week_7,week_8,week_9,week_10,week_11,week_12,week_13,week_14,week_15] 
     return plan
         
 
