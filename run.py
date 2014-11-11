@@ -106,7 +106,7 @@ def final_plan():
         week_4 = [rest(),run(5),rest(),run(6),light_run(2),rest(),tempo(21)]   
         week_5 = [rest(),hills(2.5),resistance(45),rest(),run(6),rest(),tempo(19)]
         week_6 = [rest(),interval(6),resistance(45),run(4),resistance(30),rest(),tempo(22)]
-        week_7 = [rest(),progressive(7),resistance(30),race(5),sprints(5),rest(),tempo(22)] 
+        week_7 = [rest(),progression(7),resistance(30),race(5),sprints(5),rest(),tempo(22)] 
         week_8 = [rest(),interval(4),speed(4),race(4),interval(4),rest(),tempo(24)]
         week_9 = [rest(),progression(6),rest(),tempo(4),stretch(10),rest(),tempo(10)]
         week_10 = [rest(),resistance(45),progression(9),hills(3),run(3),rest(),tempo(17)]
