@@ -3,7 +3,7 @@ import goal
 import pprint
 from routine import *
 
-
+# Make a call to class Goal and assign the value
 new_goal = goal.Goal()
 
 # Get the distance and difficulty recorded by the user
@@ -42,7 +42,6 @@ def final_plan():
         plan = [week_1,week_2,week_3,week_4,week_5,week_6]
 
     # Alternatives for a distance of 21K
-
     elif selected_distance == '21' and selected_difficulty == 'Beginner':
         week_1 = [rest(),resistance(45),speed(4),rest(),interval(6),rest(),tempo(10)]
         week_2 = [rest(),speed(4),resistance(45),rest(),stretch(20),rest(),tempo(12)]
@@ -98,7 +97,6 @@ def final_plan():
         plan = [week_1,week_2,week_3,week_4,week_5,week_6,week_7,week_8,week_9,week_10,week_11,week_12,week_13,week_14,week_15]
 
     # Alternatives for a distance of 42K
-
     elif selected_distance == '42' and selected_difficulty == 'Beginner':
         week_1 = [light_run(5),resistance(45),run(3),rest(),sprints(5),rest(),tempo(12)]
         week_2 = [rest(),interval(7),speed(3),rest(),run(3),rest(),tempo(16)]
@@ -155,35 +153,45 @@ def final_plan():
         plan = [week_1,week_2,week_3,week_4,week_5,week_6,week_7,week_8,week_9,week_10,week_11,week_12,week_13,week_14,week_15] 
     return plan
         
-
 plan = final_plan()
 
 # Use Data pretty printer to nicely print the contents of each week of the plan
 for index in range(len(plan)):
     print "Week " + str(index + 1) + ":", plan[index]
     pp = pprint.PrettyPrinter(indent=1, width=80, depth=None)
-    #pp.pprint(['Current week: ', plan[index]])
 
-print "\n"*5
-#VALID_SELECTION = ['1. Fartlek Workouts','2. Tempo Workouts','3. Interval Workouts','4. ']
-#print VALID_SELECTION
-#selection = raw_input('Please select an option')
-#if selection == '1':
-#    print 'You play with speed by running at faster efforts for short periods of time (to that tree, to the sign) followed by easy-effort running to recover.'
+# Make some space
+print "\n"*2
 
-#elif selection == '2':
-#    print 'Means to run at an effort at or slightly above your anaerobic threshold and then cooldown.'
-
-#elif selection == '3':
-#    print 'Are short, intense efforts followed by equal or slightly longer recovery time.'
-#
-#
-#print 'Remeber, all workouts should include a 15 to 20 minute warmup jog.'
-#print 'At the end of each workout do not forget to stretch for at least 10 minutes'
-print 'good bye!'
-print (goal.Goal.__doc__)
-
-
-
-
+# Options before user goes
+def option_menu():
+    # Create a list with the available options and print the menu
+    options = ['1','2','3','4']
+    print 'We are done generating your running plan.'
+    print 'Below is key if you need to know how a specific routine is done'
+    print '1. Fartlek'
+    print '2. Tempo'
+    print '3. Interval'
+    print '4. Exit'
     
+
+    # Display response based on user input
+    temp = True
+    while(temp):
+        selection = raw_input('Please select an option: ')
+        if selection == '1':
+            print '\n'
+            print 'You play with speed by running at faster efforts for short periods of time (to that tree, to the sign) followed by easy-effort running to recover.\n'
+        elif selection == '2':
+            print '\n'
+            print 'Means to run at an effort at or slightly above your anaerobic threshold and then cooldown.\n'
+        elif selection == '3':
+            print '\n'
+            print 'Are short, intense efforts followed by equal or slightly longer recovery time.\n'
+        elif selection =='4':
+            temp = False	# Make the temp variable False to end the while loop
+            print'Good Bye!'
+
+
+# Call and run option_menu
+option_menu()
