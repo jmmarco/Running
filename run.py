@@ -178,7 +178,7 @@ def option_menu():
 
     while(True):
         print 'We are done generating your running plan.'
-        print 'Below is guide with details on a specific routine'
+        print 'Below is guide with details on a specific routine\n'
         print '1.  Fartlek'
         print '2.  Tempo'
         print '3.  Interval'
