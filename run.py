@@ -173,6 +173,7 @@ def option_menu():
 
     
 
+
     # Display response based on user input
 
     while(True):
@@ -234,6 +235,7 @@ def option_menu():
             break
         else:
             print 'Invalid option please try again'
+
 
 
 # Call and run option_menu
