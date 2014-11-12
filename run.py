@@ -170,26 +170,27 @@ print "\n"*2
 def option_menu():
     # Create a list with the available options and print the menu
     options = ['1','2','3','4']
-    print 'We are done generating your running plan.'
-    print 'Below is guide with details on a specific routine'
-    print '1.  Fartlek'
-    print '2.  Tempo'
-    print '3.  Interval'
-    print '4.  Cross Train'
-    print '5.  Progression'
-    print '6.  Sprints'
-    print '7.  Race'
-    print '8.  Light Run'
-    print '9.  Hill Training'
-    print '10. Speed Work'
-    print '11. Stretch Session'
-    print '12. Steady Run'
-    print '0.  Exit'
+
     
 
     # Display response based on user input
-    temp = True
-    while(temp):
+
+    while(True):
+        print 'We are done generating your running plan.'
+        print 'Below is guide with details on a specific routine'
+        print '1.  Fartlek'
+        print '2.  Tempo'
+        print '3.  Interval'
+        print '4.  Cross Train'
+        print '5.  Progression'
+        print '6.  Sprints'
+        print '7.  Race'
+        print '8.  Light Run'
+        print '9.  Hill Training'
+        print '10. Speed Work'
+        print '11. Stretch Session'
+        print '12. Steady Run'
+        print '0.  Exit'
         selection = raw_input('Please select an option: ')
         if selection == '1':
             print '\n'
@@ -229,12 +230,11 @@ def option_menu():
             print 'Run at a fixed and steady pace\n'
         
         elif selection =='0':
-            temp = False	# Make the temp variable False to end the while loop
             print'Good Bye!'
-
+            break
         else:
             print 'Invalid option please try again'
-            option_menu()
+
 
 # Call and run option_menu
 option_menu()
