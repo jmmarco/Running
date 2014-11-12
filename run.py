@@ -170,65 +170,73 @@ print "\n"*2
 def option_menu():
     # Create a list with the available options and print the menu
     options = ['1','2','3','4']
-    print 'We are done generating your running plan.'
-    print 'Below is guide with details on a specific routine'
-    print '1.  Fartlek'
-    print '2.  Tempo'
-    print '3.  Interval'
-    print '4.  Cross Train'
-    print '5.  Progression'
-    print '6.  Sprints'
-    print '7.  Race'
-    print '8.  Light Run'
-    print '9.  Hill Training'
-    print '10. Speed Work'
-    print '11. Stretch Session'
-    print '12. Steady Run'
-    print '0.  Exit'
+
     
 
-    selection = raw_input('Please select an option: ')
-    if selection == '1':
-        print '\n'
-        print 'You play with speed by running at faster efforts for short periods of time (e.g., to that tree, to the sign) followed by easy-effort running to recover.\n'
-    elif selection == '2':
-        print '\n'
-        print 'This is the effort level just outside your comfort zone, you can hear your breathing, but you\'re not gasping for air.\n'
-    elif selection == '3':
-        print '\n'
-        print 'Are short, intense efforts followed by equal or slightly longer recovery time.\n'
-    elif selection == '4':
-        print '\n'
-        print 'Combination exercises of other disciplines, different than running (e.g., cycling, walking, swimming)\n'
-    elif selection == '5':
-        print '\n'
-        print 'Start at a comfortable speed, gradually accelerate, and end at race pace \n'
-    elif selection == '6':
-        print '\n'
-        print 'Is running a short distance at (or near) top speed for short lengths.\n'          
-    elif selection == '7':
-        print '\n'
-        print 'Run at your set race pace\n'
-    elif selection == '8':
-        print '\n'
-        print 'Run at an easy comfortable pace\n'
-    elif selection == '9':
-        print '\n'
-        print 'Find a hill or bridge where it takes you at least one minute to run.\n'
-    elif selection == '10':
-        print '\n'
-        print 'Is a a fast paced run\n'
-    elif selection == '11':
-        print '\n'
-        print 'Before stretching, always jog at least 10 minutes to warm up the muscles. Never stretch "cold" muscles. Also, you should always take time to stretch after a run.\n'
-    elif selection == '12':
-        print '\n'
-        print 'Run at a fixed and steady pace\n'
-    elif selection =='0':
-        print'Good Bye!'
-    else:
-        print 'Invalid option please try again'
-        option_menu()
+
+    # Display response based on user input
+
+    while(True):
+        print 'We are done generating your running plan.'
+        print 'Below is guide with details on a specific routine'
+        print '1.  Fartlek'
+        print '2.  Tempo'
+        print '3.  Interval'
+        print '4.  Cross Train'
+        print '5.  Progression'
+        print '6.  Sprints'
+        print '7.  Race'
+        print '8.  Light Run'
+        print '9.  Hill Training'
+        print '10. Speed Work'
+        print '11. Stretch Session'
+        print '12. Steady Run'
+        print '0.  Exit'
+        selection = raw_input('Please select an option: ')
+        if selection == '1':
+            print '\n'
+            print 'You play with speed by running at faster efforts for short periods of time (e.g., to that tree, to the sign) followed by easy-effort running to recover.\n'
+        elif selection == '2':
+            print '\n'
+            print 'This is the effort level just outside your comfort zone, you can hear your breathing, but you\'re not gasping for air.\n'
+        elif selection == '3':
+            print '\n'
+            print 'Are short, intense efforts followed by equal or slightly longer recovery time.\n'
+        elif selection == '4':
+            print '\n'
+            print 'Combination exercises of other disciplines, different than running (e.g., cycling, walking, swimming)\n'
+        elif selection == '5':
+            print '\n'
+            print 'Start at a comfortable speed, gradually accelerate, and end at race pace \n'
+        elif selection == '6':
+            print '\n'
+            print 'Is running a short distance at (or near) top speed for short lengths.\n'          
+        elif selection == '7':
+            print '\n'
+            print 'Run at your set race pace\n'
+        elif selection == '8':
+            print '\n'
+            print 'Run at an easy comfortable pace\n'
+        elif selection == '9':
+            print '\n'
+            print 'Find a hill or bridge where it takes you at least one minute to run.\n'
+        elif selection == '10':
+            print '\n'
+            print 'Is a a fast paced run\n'
+        elif selection == '11':
+            print '\n'
+            print 'Before stretching, always jog at least 10 minutes to warm up the muscles. Never stretch "cold" muscles. Also, you should always take time to stretch after a run.\n'
+        elif selection == '12':
+            print '\n'
+            print 'Run at a fixed and steady pace\n'
+        
+        elif selection =='0':
+            print'Good Bye!'
+            break
+        else:
+            print 'Invalid option please try again'
+
+
 
 # Call and run option_menu
 option_menu()
